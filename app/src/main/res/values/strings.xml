@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CONVERTOR</string>
+    <string-array name="currency">
+        <item>Please select value</item>
+        <item>USD</item>
+        <item>EURO</item>
+        <item>POUND</item>
+
+    </string-array>
+</resources>

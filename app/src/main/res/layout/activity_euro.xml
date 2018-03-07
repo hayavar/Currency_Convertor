@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.convertor1.EuroActivity">
+
+    <TextView
+        android:id="@+id/txtscreen2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Welcome to EURO to INR conversion"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtscreen2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Enter the amount in EURO"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/euroentery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/euroentery"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/euroentery"
+        app:srcCompat="@drawable/euro1" />
+
+    <TextView
+        android:id="@+id/inrdisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/euroentery"
+        android:layout_marginTop="23dp"
+        android:layout_toEndOf="@+id/eurodisp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/toinrfrmeuro"
+        android:layout_alignTop="@+id/inrdisp"
+        app:srcCompat="@drawable/rupees" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/toeurofrominr"
+        android:layout_below="@+id/toinrfrmeuro"
+        android:layout_marginTop="13dp"
+        android:text="Enter the amount in INR"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/toinrfrmeuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="41dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:onClick="toinr"
+        android:text="TO INR"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/euroreset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toinrfrmeuro"
+        android:layout_alignBottom="@+id/toinrfrmeuro"
+        android:layout_toEndOf="@+id/toeuro"
+        android:onClick="ereset1"
+        android:text="RESET"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/toeurofrominr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/euroentery"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/toeuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/toeurofrominr"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="33dp"
+        android:onClick="toeurofrominr"
+        android:text="TO EURO"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/euroreset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toeuro"
+        android:layout_alignBottom="@+id/toeuro"
+        android:layout_alignEnd="@+id/textView3"
+        android:onClick="ereset2"
+        android:text="RESET"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/eurodisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/euroreset2"
+        android:layout_below="@+id/toeurofrominr"
+        android:layout_marginTop="24dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/toinrfrmeuro"
+        android:layout_alignTop="@+id/eurodisp"
+        app:srcCompat="@drawable/euro1" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/toeurofrominr"
+        android:layout_alignStart="@+id/imageView"
+        app:srcCompat="@drawable/rupees" />
+
+</RelativeLayout>

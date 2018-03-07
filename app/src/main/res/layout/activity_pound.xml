@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.convertor1.PoundActivity">
+
+    <TextView
+        android:id="@+id/txtscreen3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Welcome to POUND to INR conversion"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtscreen3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Enter the amount in Pounds"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/ipdentry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/imageView9"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button6"
+        android:layout_below="@+id/reset1"
+        android:layout_marginTop="20dp"
+        android:text="Enter the amount in INR"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtview1"
+        android:layout_below="@+id/imageView10"
+        android:layout_marginTop="27dp"
+        android:onClick="res1"
+        android:text="RESET"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/txtview1"
+        android:layout_below="@+id/txtview1"
+        android:layout_marginTop="31dp"
+        app:srcCompat="@drawable/pound" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/button6"
+        android:layout_alignTop="@+id/ptxt"
+        app:srcCompat="@drawable/rupees" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/ipdentry"
+        android:layout_toStartOf="@+id/textView5"
+        app:srcCompat="@drawable/rupees" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignStart="@+id/imageView10"
+        android:layout_alignTop="@+id/iptxt"
+        app:srcCompat="@drawable/pound" />
+
+    <EditText
+        android:id="@+id/pdentry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView9"
+        android:layout_alignStart="@+id/button7"
+        android:layout_marginStart="11dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/ptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/reset1"
+        android:layout_below="@+id/pdentry"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/iptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ipdentry"
+        android:layout_marginTop="37dp"
+        android:layout_toEndOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_alignStart="@+id/iptxt"
+        android:onClick="res2"
+        android:text="RESET"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView9"
+        android:layout_below="@+id/iptxt"
+        android:layout_marginTop="23dp"
+        android:onClick="pound"
+        android:text="TO POUND"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/reset1"
+        android:layout_alignBottom="@+id/reset1"
+        android:layout_alignStart="@+id/ipdentry"
+        android:onClick="inr"
+        android:text="TO INR"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+</RelativeLayout>
